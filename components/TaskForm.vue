@@ -49,7 +49,7 @@ function submit(){
     emit('add', {
         title: title.value.trim(),
         category: category.value || 'Other',
-        priority: priority.value
+        priority: priority.value || 'Low'
     })
 
     title.value = ''

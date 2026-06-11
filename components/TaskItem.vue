@@ -14,8 +14,8 @@ type="checkbox"
         <span class="tag" :class="task.priority">{{ task.priority }}</span>
         <span class="date">{{ task.createdAt }}</span>
       </div>
+                    <button class="delete-btn" @click="$emit('delete')">X</button>
 
-      <button class="delete-btn" @click="$emit('delete')">X</button>
 </div>
 </div>
 </template>
@@ -94,6 +94,7 @@ body.dark .tag.low    { background: #0d2e1e; color: #5dcaa5; }
 }
 
 .delete-btn {
+  margin-bottom: 5px;
   background: none;
   border: none;
   cursor: pointer;

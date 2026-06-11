@@ -53,7 +53,7 @@ function deleteCategory(name){
 
 function exportToTxt(){
         const lines = tasks.value.map(t =>
-      `[${t.done ? 'X' : ' '}] ${t.title} | ${t.category} | Prioridade: ${t.priority} | ${t.createdAt}`
+      `[${t.done ? 'X' : ' '}] ${t.title} | ${t.category} | Priority: ${t.priority} | ${t.createdAt}`
     )
     const content = lines.join('\n')
     const blob = new Blob([content], { type: 'text/plain' })

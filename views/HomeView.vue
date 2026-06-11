@@ -13,12 +13,19 @@
         <span class="stat-label"> Completed</span>
       </div>
 </div>
+
+<ExporterBtn />
+
 <p class="footer">Stay organized, one task at a time.</p>
+<createdBy />
 </div>
 </template>
 
 <script setup>
 import { useTaskStore } from '../stores/tasks.js'
+import ExporterBtn from '../components/ExporterBtn.vue'
+import createdBy from '../components/createdBy.vue'
+
 const taskStore = useTaskStore()
 const total = taskStore.total
 const done = taskStore.done
