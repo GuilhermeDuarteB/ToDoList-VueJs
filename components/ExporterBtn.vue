@@ -2,7 +2,7 @@
     <h1>Export Tasks</h1>
 
     <div class="btn">
-        <button @click="exportTasks">Export as JSON</button>
+        <button @click="exportTasks">Export as TXT</button>
     </div>
    </template> 
 
